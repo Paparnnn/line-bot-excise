@@ -30,7 +30,7 @@ foreach ($request_json['events'] as $event)
 		}
 		
 	} else {
-		$reply_message = 'อ่านละนะ "'.$event['type'].'" รอสักครู่ฮะ';
+		$reply_message = 'อ่านละนะ Event "'.$event['type'].'" รอสักครู่ฮะ';
 	}
 	
 	// reply message

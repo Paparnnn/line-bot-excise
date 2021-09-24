@@ -27,6 +27,8 @@ foreach ($request_json['events'] as $event)
 			}
 			if($text == "พิกัดอัตราภาษีสรรพสามิต"){
 				$reply_message = mySQL_selectAll('http://bot.kantit.com/json_select_users.php');
+			}else if($text == "การต่อใบอนุญาตขายสุรา ยาสูล และไพ่"){
+				$reply_message = "http://www.kantit.com/download/excise.jpg";
 			}else if($text == "อัตราภาษีสรรพสามิตรถยนต์ำ"){
 				$reply_message = mySQL_selectAll('http://bot.kantit.com/json_select_users.php?sid='.$texts[1]);
 			}else if($text == "ขั้นตอนการขอใบอนุญาตขายสุรา"){
